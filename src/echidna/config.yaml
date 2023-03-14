@@ -1,0 +1,11 @@
+corpusDir: "src/echidna"
+testMode: assertion
+testLimit: 10000
+deployer: "0x10000"
+sender: ["0x10000", "0x20000", "0x30000"]
+multi-abi: true
+cryticArgs: # If we add more dependencies they will need to be added as symlinks here!
+  [
+    "--solc-remaps",
+    "@openzeppelin/=lib/openzeppelin-contracts/ @solmate/=lib/solmate/src/ properties/=lib/properties/contracts/",
+  ] 

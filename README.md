@@ -1,39 +1,9 @@
-# Y2K
+Echidna test
 
-![image](https://user-images.githubusercontent.com/15989933/168874410-a2ce1798-8d72-4fce-a6ba-b61d4303a3e9.png)
+First install the properties:
 
-# Foundry / Forge
+forge install crytic/properties
 
-## Resources
+Then run echidna:
 
-- [Foundry Book](https://book.getfoundry.sh/index.html)
-
-## Quickstart
-
-### Requirements Install Foundry
-
-- [Forge/Foundryup](https://github.com/gakonst/foundry#installation)
-
-  - You'll know you've done it right if you can run `forge --version`
-- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-
-  - You'll know you've done it right if you can run `git --version`
-- Install libs
-  ``forge update``
-
-## Deploy
-
-
-## Test in Mainnet Fork
-
-```
-
-forge test --fork-url https://eth-mainnet.alchemyapi.io/v2/XGDnf9iNvs51rbBp5r07HB7nIBg_Frqm -vv
-
-```
-
-## Makefile
-
-```
-make install
-```
+echidna-test ./src/echidna/ERC1155test.sol --contract ERC1155test --config ./src/echidna/config.yaml
