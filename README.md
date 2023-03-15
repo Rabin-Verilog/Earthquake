@@ -14,6 +14,8 @@ Then install the crytic properties:
 forge install crytic/properties
 ```
 
+**Automated testing**
+
 To run echidna:
 
 echidna-test ./src/echidna/ERC1155test.sol --contract ERC1155test --config ./src/echidna/config.yaml
